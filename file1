@@ -1,1 +1,19 @@
-print()
+from tempest import test
+
+class SampleTempestTest(test.BaseTestCase):
+
+    @test.attr(type='smoke')
+    def test_create_instance(self):
+        # Your test logic to create an instance
+        self.assertTrue(True)
+
+    @test.attr(type='smoke')
+    def test_delete_instance(self):
+        # Your test logic to delete an instance
+        self.assertTrue(True)
+
+    @test.attr(type='smoke')
+    def test_list_instances(self):
+        # Your test logic to list instances
+        self.assertTrue(True)
+print ("Its working")
